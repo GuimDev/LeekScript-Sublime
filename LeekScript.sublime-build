@@ -1,0 +1,24 @@
+{
+	"working_dir": "$packages/LeekScript Syntax/",
+	"selector": "source.lk",
+	"variants": [{
+		"name": "Run",
+		"working_dir": "$packages/LeekScript Syntax/",
+		"windows": {
+			"cmd": ["start", "node", "$packages/LeekScript Syntax/nodeLKlauncher.js"],
+			"shell": true
+		},
+		"linux": {
+			"cmd": ["gnome-terminal -e \"node '$packages/LeekScript Syntax/nodeLKlauncher.js'\""],
+			"shell": true
+		}
+	}],
+	"windows": {
+		"cmd": ["start", "node", "$packages/LeekScript Syntax/nodeLKlauncher.js", "$file"],
+		"shell": true
+	},
+	"linux": {
+		"cmd": ["gnome-terminal -e \"node '$packages/LeekScript Syntax/nodeLKlauncher.js' '$file'\""],
+		"shell": true
+	}
+}

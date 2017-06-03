@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>lk</string>
+		<string>js.lk</string>
+	</array>
+	<key>name</key>
+	<string>LeekScript</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>include</key>
+			<string>source.js</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(array(Max|Min)|average|canUse(Chip(OnCell)?|Weapon(OnCell)?)|cbrt|contains|count|debug(E|W)?|endsWith|fill|get(AbsoluteShield|Agility|Alive(Allies|Enemies(Count)?)|Allies(|Count|Life)|Cell(Content|Distance|FromXY|ToUse(Chip(OnCell)?|Weapon(OnCell)?)|X|Y)?|Chip(Cooldown|Cost|Effects|MaxScope|MinScope|Name|s|Targets)|Cores|CurrentCooldown|DeadAllies|DeadEnemies|DeadEnemiesCount|Distance|Effects|Enemies(Count|Life)?|Farthest(Ally|Enemy)|Fight(Context|Type)|Force|Frequency|InstructionsCount|Leek(OnCell)?|Level|Life|Message(Author|Params|s|Type)|MP|Name|Nearest(Ally|Enemy)|NextPlayer|Path(Length)?|PreviousPlayer|RelativeShield|TotalLife|TP|Turn|Weapon(Cost|Effects|MaxScope|MinScope|Name|s|Targets)?)|hypot|in(Array|clude|sert)|is(Alive|Ally|Dead|Empty(Cell)?|Enemy|Inline(Chip|Weapon)|Leek|Obstacle|OnSameLine)|length|log10|move(AwayFrom(Cell|Cells|Leeks|Line)?|Toward(Cell|Cells|Leeks|Line)?)|pushAll|rand(Float|Int)?|removeElement|say|send(All|To)|setWeapon|shuffle|signum|startsWith|subArray|sum|to(Degrees|Lower|Radians|Upper)|useChip(OnCell)?|useWeapon(OnCell)?)\b(?=\()</string>
+			<key>name</key>
+			<string>support.function.js</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(CELL_(EMPTY|OBSTACLE|PLAYER)|CHIP_(ADRENALINE|ARMOR|AVALANCHE|BANDAGE|CURE|DOPING|DRIP|FLAME|FLASH|FORTRESS|HELMET|ICE|ICEBERG|LEATHER_BOOTS|LIBERATION|LIGHTNING|METEORITE|MOTIVATION|PEBBLE|PROTEIN|RAGE|RAMPART|REFLEXES|RESURRECTION|ROCK(|FALL)|SEVEN_LEAGUE_BOOTS|SHIELD|SHOCK|SPARK|STALACTITE|STEROID|STRETCHING|VACCINE|WALL|WARM_UP|WINGED_BOOTS)|E|EFFECT_(ABSOLUTE_SHIELD|AGILITY|DAMAGE|DEBUFF|FORCE|HEAL|MP|RELATIVE_SHIELD|TP)|FIGHT_CONTEXT_(CHALLENGE|GARDEN|TEST|TOURNAMENT)|FIGHT_TYPE_(FARMER|SOLO|TEAM)|INSTRUCTIONS_LIMIT|MAX_TURNS|MESSAGE_(ATTACK|BUFF_(AGILITY|FORCE|MP|TP)|CUSTOM|DEBUFF|HEAL|MOVE_(AWAY(|_CELL)|TOWARD(|_CELL))|SHIELD)|PI|SORT_(ASC|DESC)|USE_(FAILED|INVALID_COOLDOWN|INVALID_POSITION|INVALID_TARGET|NOT_ENOUGH_TP|SUCCESS)|WEAPON_(DESTROYER|DOUBLE_GUN|ELECTRISOR|FLAME_THROWER|GAZOR|GRENADE_LAUNCHER|LASER|MACHINE_GUN|MAGNUM|M_LASER|PISTOL|SHOTGUN))\b</string>
+			<key>name</key>
+			<string>support.constant.dom.js</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(global)\b</string>
+			<key>name</key>
+			<string>storage.type.js</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.lk</string>
+	<key>uuid</key>
+	<string>fd4537a6-0089-46f2-a255-db9cb723e0d9</string>
+</dict>
+</plist>
